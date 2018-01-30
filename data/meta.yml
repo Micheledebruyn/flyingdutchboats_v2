@@ -1,24 +1,23 @@
 geo_placename: Amsterdam
-geo_position: "52.3702;4.8952"
+geo_position: "52.372585;4.915375"
 geo_region: NL
 
-name: HEEL COOL
-description: Hotel de botel
-image: "http://heel.cool/cool-social-198ceaf1.png"
+name: Codam
+description: Codam will open its doors in Amsterdam in September 2018. 
+image: "meta.png"
 
-fb_site_name: HEEL COOL
-fb_title: HEEL COOL - Sweet, sweet stuff
-fb_description: Hotel de botel
-fb_image: "http://heel.cool/cool-social-198ceaf1.png"
+fb_site_name: Codam
+fb_title: Codam - Write Your Future
+fb_description: Codam will open its doors in Amsterdam in September 2018. 
+fb_image: "meta.png"
 fb_type: Website
-fb_url: http://heel.cool
+fb_url: "https://codam.com/"
 
-google_name: HEEL COOL
-google_description: Hotel de botel
-google_image: "http://heel.cool/cool-social-198ceaf1.png"
+google_name: Codam
+google_description: Codam will open its doors in Amsterdam in September 2018. 
+google_image: "meta.png"
 
 twitter_card_type: summary_large_image
-twitter_site: "@unless_io"
-twitter_title: HEEL COOL - Let us tell your story
-twitter_description: Hotel de botel
-twitter_image: "http://heel.cool/cool-social-198ceaf1.png"
+twitter_title: Codam - Write Your Future
+twitter_description: Codam will open its doors in Amsterdam in September 2018. 
+twitter_image: "meta.png"
