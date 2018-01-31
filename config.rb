@@ -2,6 +2,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+set :fonts_dir,  'fonts'
+
 activate :sprockets
 activate :dato, live_reload: true
 ignore 'articles/show.html.erb'
