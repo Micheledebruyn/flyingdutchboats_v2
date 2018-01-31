@@ -4,3 +4,7 @@
 // @import "profile";
 // @import "map";
 @import "column_grid";
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
