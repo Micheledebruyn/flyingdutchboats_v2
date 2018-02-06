@@ -1,5 +1,12 @@
 <div class="banner-three-columns" style="background-image:url('<%= image_path 'background.jpg' %>');">
-
+  <div class="languages">
+  <% link_to "" do %>
+    <%= "EN" %>
+    <% end %> |
+     <% link_to "/nl" do %>
+    <%= "NL" %>
+    <% end %>
+    </div>
   <%= image_tag 'logo.svg', class: "logo hidden-xs hidden-md hidden-sm" %>
 
   <div class="column-grid">
@@ -11,19 +18,18 @@
     <div class="first-column">
       <div class="content">
         <h1>
-          Write Your Future
+          <%= t(:title) %>
+          <!-- Write Your Future -->
         </h1>
         <p>
-          Codam will open its doors in Amsterdam in September 2018.
-          Leave us your email address and we’ll keep you updated on
-          all future Codam developments.
+          <%= t(:paragraph) %>
         </p>
       </div>
     </div>
 
     <div class="second-column">
       <form action="https://codam.us17.list-manage.com/subscribe/post?u=894f1bf1ce8b3af7442e06a75&amp;id=7acaa79e44" method="post" class="mailchimp-form" target="_blank">
-        <input type="email" placeholder="Your email" autofocus="true" name="EMAIL">
+        <input type="email" placeholder=" <%= t(:inputfield) %>" autofocus="true" name="EMAIL">
         <input type="text" name="b_894f1bf1ce8b3af7442e06a75_7acaa79e44" tabindex="-1" value="" class="hidden">
         <input type="submit" value=" ">
       </form>
