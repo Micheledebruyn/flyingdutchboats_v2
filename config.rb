@@ -5,7 +5,7 @@ end
 # set :fonts_dir,  'fonts'
 activate :i18n, mount_at_root: :nl
 activate :sprockets
-activate :dato, live_reload: true
+# activate :dato, live_reload: true
 ignore 'articles/show.html.erb'
 
 # dato.tap do |dato|

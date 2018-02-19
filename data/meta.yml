@@ -1,23 +1,26 @@
 geo_placename: Amsterdam
-geo_position: "52.372585;4.915375"
+geo_position: "52.3702;4.8952"
 geo_region: NL
 
-name: Codam
-description: Codam will open its doors in Amsterdam in September 2018.
-image: "meta.png"
+name: Flying Dutch Boats
+description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
+image: "https://micheledebruyn.github.io/flyingdutchboats/images/logo-text.png"
 
-fb_site_name: Codam
-fb_title: Codam - Write Your Future
-fb_description: Codam will open its doors in Amsterdam in September 2018.
-fb_image: "meta.png"
+fb_site_name: Flying Dutch Boats
+fb_title: Flying Dutch Boats
+fb_description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
+fb_image: "https://micheledebruyn.github.io/flyingdutchboats/images/logo-text.png"
 fb_type: Website
-fb_url: "https://codam.com/"
+fb_url: http://flyingdutchboats.com
 
-google_name: Codam
-google_description: Codam will open its doors in Amsterdam in September 2018.
-google_image: "meta.png"
+google_name: Flying Dutch Boats
+google_description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
+google_image: "https://micheledebruyn.github.io/flyingdutchboats/images/logo-text.png"
 
-twitter_card_type: summary_large_image
-twitter_title: Codam - Write Your Future
-twitter_description: Codam will open its doors in Amsterdam in September 2018.
-twitter_image: "meta.png"
+
+
+# To do: write meta for twitter for fdb
+# twitter_card_type: summary_large_image
+# twitter_title: Codam - Write Your Future
+# twitter_description: Codam will open its doors in Amsterdam in September 2018.
+# twitter_image: "meta.png"
