@@ -2,7 +2,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-# set :fonts_dir,  'fonts'
+set :fonts_dir,  'fonts'
 # activate :i18n, mount_at_root: :nl
 activate :sprockets
 # activate :dato, live_reload: true

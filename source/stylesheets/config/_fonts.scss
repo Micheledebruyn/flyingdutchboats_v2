@@ -1,6 +1,4 @@
 // Import Google fonts
-@import url("https://use.typekit.net/xbj7pds.css");
-// Define fonts for body and headers
-$body-font: "museo", "Helvetica", "serif";
-$headers-font: "museo", "Helvetica", "sans-serif";
-
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto:700');
+$body-font: "Nunito", "serif";
+$headers-font: "Roboto", "Helvetica", "sans-serif";

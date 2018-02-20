@@ -1,0 +1,54 @@
+.navbar {
+  background-color: white;
+  height: 130px;
+  .navbar-container {
+    margin: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .navbar-top {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      .social-items {
+        display: flex;
+        justify-content: center;
+        a {
+          text-decoration: none;
+          color: $text-color;
+          margin: 0px 15px;
+        }
+      }
+      p {
+        margin-bottom: 0px;
+        font-weight: bold;
+      }
+    }
+    .navbar-bottom {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 16px;
+      a {
+        margin: 0px 8px;
+        color: $text-color;
+        // To do: Get the transform to work
+        display: block;
+        transform: color 3s ease;
+      }
+      a:hover {
+        text-decoration: none;
+
+        color: $red;
+      }
+    }
+  }
+
+}
+
