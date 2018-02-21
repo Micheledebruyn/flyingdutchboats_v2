@@ -1,0 +1,16 @@
+.banner {
+  background-size: cover !important;
+}
+
+@media(min-width: 968px) {
+  .banner {
+    height: 600px;
+    background-position-y: -120px;
+  }
+}
+
+@media(max-width: 967px) {
+  .banner {
+    height: 300px;
+  }
+}
