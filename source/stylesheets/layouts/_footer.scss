@@ -15,10 +15,7 @@
     margin-bottom: 24px
   }
 }
-
-
-
-
+// Above tablet
 @media(min-width: 968px) {
   .footer {
     max-height: 280px;
@@ -28,9 +25,7 @@
     }
   }
 }
-
-
-// Above tablet
+// Below tablet
 @media(max-width: 967px) {
   .footer {
     padding: 20px;
