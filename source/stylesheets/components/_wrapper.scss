@@ -21,19 +21,23 @@
   }
 }
 
+
 @media(min-width: 968px) {
-    .paragraph-container {
-      width: 70%;
-    }
+  .paragraph-container {
+    width: 70%;
   }
+  .review-container {
+    width: 55%;
+  }
+}
 
 @media(max-width: 967px) {
-    .paragraph-container {
-      width: 100%;
-      p {
-        font-size: 16px;
-      }
+  .paragraph-container {
+    width: 100%;
+    p {
+      font-size: 16px;
     }
+  }
 }
 
 
