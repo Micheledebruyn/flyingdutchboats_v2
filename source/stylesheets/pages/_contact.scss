@@ -1,0 +1,26 @@
+.contact-text {
+  margin: 20px 0px;
+}
+.contact-phone i {
+  color: $red;
+  margin-right: 4px;
+}
+.contact-form {
+  margin-bottom: 40px;
+  input, textarea {
+    border: 1px solid rgba(1,1,1,0.08);
+    border-radius: 2px;
+  }
+  textarea {
+    height: 150px;
+  }
+  .form {
+    max-width: 500px;
+  }
+  p {
+    font-size: 17px;
+    color: $text-color;
+    margin-bottom: 25px;
+
+  }
+}

@@ -4,7 +4,15 @@
 }
 
 @media(max-width: 967px) {
-    .thumbnail-fdb {
-      margin: 20px 0px;
-    }
+  .thumbnail-fdb {
+    margin: 20px 0px;
+  }
+}
+
+
+.thumbnail-round {
+  border-radius: 50%;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
 }
