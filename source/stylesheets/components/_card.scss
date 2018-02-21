@@ -1,0 +1,49 @@
+.tour {
+  .line-expl-part {
+    max-height: 166px;
+  }
+  margin-top: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: white;
+  min-height: 700px;
+  padding: 20px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+  .title-tour {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .tour-description {
+    padding: 0px 12px;
+    min-height: 300px;
+    .times-tour {
+      display: flex;
+      justify-content: center;
+      .times-one, .times-two {
+        margin: 5px 0px;
+
+      }
+    }
+    .times-one p, .times-two p {
+      background-color: rgb(245, 245, 245);
+      color: #666666;
+      padding: 2px 8px;
+      border-radius: 1px;
+    }
+  }
+  .tour-expl {
+    display: flex;
+    flex-direction: column;
+    span {
+      margin: 10px;
+      i {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+
+
+
