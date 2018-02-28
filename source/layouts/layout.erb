@@ -1,24 +1,24 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
-      <%= partial "layouts/meta" %>
-      <%= partial "layouts/google_analytics" %>
-    <title><%= current_page.data.title || "Flying Dutch Boats" %></title>
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.ico' %>
-  </head>
-  <body>
-    <%= partial "layouts/navbar" %>
-    <%= yield %>
-    <%= partial "layouts/footer" %>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <%= partial "layouts/meta" %>
+  <%= partial "layouts/google_analytics" %>
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title><%= current_page.data.title || "Flying Dutch Boats" %></title>
+  <%= stylesheet_link_tag "application" %>
+  <%= favicon_tag 'images/favicon.png' %>
+</head>
+<body>
+  <%= partial "layouts/navbar" %>
+  <%= yield %>
+  <%= partial "layouts/footer" %>
 
+  <%= javascript_include_tag "application" %>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=841&amp;locationId=12691954&amp;lang=nl&amp;rating=false&amp;nreviews=0&amp;writereviewlink=false&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
-
+</body>
 </html>

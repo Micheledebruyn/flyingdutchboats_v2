@@ -1,3 +1,8 @@
 //= require jquery
 //= require bootstrap
-//= require_tree .
+//= require carousel/owl.carousel
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
