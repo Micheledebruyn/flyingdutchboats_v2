@@ -31,36 +31,42 @@
         <%= link_to "Contact", "contact.html"  %>
       </div>
     </div>
-    <div class="dropdown visible-xs visible-sm">
-      <i class="fa fa-align-justify dropdown-toggle fa-2x" id="dropdownMenu1" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
 
-       <li role="presentation">
-         <%= link_to "Canal Cruises", "index.html", role: "menuitem", tabindex: "-1" %>  
-       </li> 
-       <li role="presentation">
-         <%= link_to "Boat Rental", "boat_rental.html", role: "menuitem", tabindex: "-1" %>  
-       </li> 
-       <li role="presentation">
-         <%= link_to "FAQ", "faq.html", role: "menuitem", tabindex: "-1" %>  
-       </li> 
-       <li role="presentation">
-         <%= link_to "Events", "events.html" , role: "menuitem", tabindex: "-1" %>  
-       </li> 
-       <li role="presentation">
-         <%= link_to "Recommendations", "recommendations.html" , role: "menuitem", tabindex: "-1" %>  
-       </li> 
-       <li role="presentation">
-         <%= link_to "Contact", "contact.html" , role: "menuitem", tabindex: "-1" %>  
-       </li> 
-       <li role="presentation" class="divider"></li>
-       <li role="presentation">
-        <%= link_to "Book now!", "booking.html", role: "menuitem", tabindex: "-1"  %>
-      </li>
-      <li role="presentation">
-        <%= link_to "+31 647589217", "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
-      </li>
-    </ul>
+    <button id="trigger-overlay" class="visible-xs" type="button">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="overlay overlay-contentscale">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+         <li>
+           <%= link_to "Canal Cruises", "index.html", role: "menuitem", tabindex: "-1" %>  
+         </li> 
+         <li>
+           <%= link_to "Boat Rental", "boat_rental.html", role: "menuitem", tabindex: "-1" %>  
+         </li> 
+         <li>
+           <%= link_to "FAQ", "faq.html", role: "menuitem", tabindex: "-1" %>  
+         </li> 
+         <li>
+           <%= link_to "Events", "events.html" , role: "menuitem", tabindex: "-1" %>  
+         </li> 
+         <li>
+           <%= link_to "Recommendations", "recommendations.html" , role: "menuitem", tabindex: "-1" %>  
+         </li> 
+         <li>
+           <%= link_to "Contact", "contact.html" , role: "menuitem", tabindex: "-1" %>  
+         </li> 
+         <li class="divider"></li>
+         <li>
+          <%= link_to "Book now!", "booking.html", role: "menuitem", tabindex: "-1"  %>
+        </li>
+        <li>
+          <%= link_to "+31 647589217", "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
 </div>
