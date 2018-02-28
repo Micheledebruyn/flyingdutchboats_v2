@@ -1,6 +1,10 @@
 //= require jquery
 //= require bootstrap
 //= require carousel/owl.carousel
+//= require modernizr.custom
+//= require classie
+//= require demo7
+//= require snap.svg-min
 
 document.addEventListener("touchstart", function() {},false);
 
