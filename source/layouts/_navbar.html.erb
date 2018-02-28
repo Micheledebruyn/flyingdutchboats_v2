@@ -1,45 +1,66 @@
-<div class="navbar">
+<div class="navbar-dutch-boats">
   <div class="navbar-container">
-    <img src="images/logo-text.png" alt="Logo Flying Dutch Boats">
+    <% link_to "index.html" do %>
+    <%= image_tag 'logo-text.png', alt: "Logo Flying Dutch Boats", class: "logo" %>
+    <% end %>
     <div class="navbar-right-side hidden-xs hidden-sm">
       <div class="navbar-top">
         <div class="social-items">
-          <a href="https://www.facebook.com/FlyingDutchBoats/" target="_blank">
-            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/flyingdutchboats/?hl=nl" target="_blank">
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html" target="_blank">
-            <!-- <i class="fa fa-tripadvisor fa-2x" aria-hidden="true"></i> -->
-            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-          </a>
+          <% link_to "https://www.facebook.com/FlyingDutchBoats/", target: "_blank" do %>
+          <i class="fab fa-facebook fa-2x"></i>
+          <% end %>
+
+          <% link_to "https://www.instagram.com/flyingdutchboats/?hl=nl", target: "_blank" do %>
+          <i class="fab fa-instagram fa-2x"></i>
+          <% end %>
+
+          <% link_to "https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html", target: "_blank" do %>
+          <i class="fab fa-tripadvisor fa-2x" aria-hidden="true"></i>
+          <% end %>
+
         </div>
-        <p>+31 647589217</p>
-        <a href="booking.html" class="btn-red">Request now</a>
+        <%= link_to "+31 647589217", "tel:+31647589217", class: "red-link" %>
+        <%= link_to "Book now!", "booking.html", class: "btn-red"  %>
       </div>
       <div class="navbar-bottom">
-        <a href="index.html">Canal Cruises</a>
-        <a href="boat_rental.html">Boat Rental</a>
-        <a href="faq.html">FAQ</a>
-        <a href="events.html">Events</a>
-        <a href="recommendations.html">Recommendations</a>
-        <a href="contact.html">Contact</a>
+        <%= link_to "Canal Cruises", "index.html" %>
+        <%= link_to "Boat Rental", "boat_rental.html" %>
+        <%= link_to "FAQ", "faq.html" %>
+        <%= link_to "Events", "events.html"  %>
+        <%= link_to "Recommendations", "recommendations.html"  %>
+        <%= link_to "Contact", "contact.html"  %>
       </div>
     </div>
     <div class="dropdown visible-xs visible-sm">
       <i class="fa fa-align-justify dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Canal Tours</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="boat_rental.html">Boat Rental</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="faq.html">FAQ</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="events.html">Events</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="recommendations.html">Recommendations</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="contact.html">Contact</a></li>
-        <li role="presentation" class="divider"></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Reserve now</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">+31 647589217</a></li>
-      </ul>
-    </div>
+
+       <li role="presentation">
+         <%= link_to "Canal Cruises", "index.html", role: "menuitem", tabindex: "-1" %>  
+       </li> 
+       <li role="presentation">
+         <%= link_to "Boat Rental", "boat_rental.html", role: "menuitem", tabindex: "-1" %>  
+       </li> 
+       <li role="presentation">
+         <%= link_to "FAQ", "faq.html", role: "menuitem", tabindex: "-1" %>  
+       </li> 
+       <li role="presentation">
+         <%= link_to "Events", "events.html" , role: "menuitem", tabindex: "-1" %>  
+       </li> 
+       <li role="presentation">
+         <%= link_to "Recommendations", "recommendations.html" , role: "menuitem", tabindex: "-1" %>  
+       </li> 
+       <li role="presentation">
+         <%= link_to "Contact", "contact.html" , role: "menuitem", tabindex: "-1" %>  
+       </li> 
+       <li role="presentation" class="divider"></li>
+       <li role="presentation">
+        <%= link_to "Book now!", "booking.html", role: "menuitem", tabindex: "-1"  %>
+      </li>
+      <li role="presentation">
+        <%= link_to "+31 647589217", "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
+      </li>
+    </ul>
   </div>
+</div>
 </div>

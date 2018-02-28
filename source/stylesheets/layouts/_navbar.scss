@@ -1,8 +1,14 @@
-.navbar {
+.navbar-dutch-boats {
   background-color: white;
   height: 100px;
+  font-size: 14px;
+  .logo {
+    height: 50px;
+    width: 135px;
+  }
   .navbar-container {
-    margin: 20px 60px;
+    width: 80%;
+    margin: 40px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +19,7 @@
     justify-content: flex-end;
     .navbar-top {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       height: 50px;
       .social-items {
@@ -23,6 +29,10 @@
           text-decoration: none;
           color: $text-color;
           margin: 0px 15px;
+          transition: color 200ms ease;
+          &:hover {
+            color: $red;
+          }
         }
       }
       p {
