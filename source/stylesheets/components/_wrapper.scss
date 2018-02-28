@@ -21,6 +21,26 @@
   }
 }
 
+.wrapper-review {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media(min-width: 968px) {
+  .wrapper-review {
+    margin-top: 33%;
+  }
+}
+
+@media(max-width: 967px) {
+  .wrapper-review {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
 
 @media(min-width: 968px) {
   .paragraph-container {
