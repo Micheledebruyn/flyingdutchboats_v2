@@ -1,0 +1,75 @@
+<div class="wrapper-white">
+  <div class="container">
+    <%= partial "dark_title", locals: { title: "Book your private boat tour now"} %>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <p>By filling out this form you will make a request for a boat trip. After receiving an email from me, including payment details & gathering details, you will have a confirmation that the tour is booked and you are ready to go.
+        <div></div>
+        If none of the proposed times work for you, or you want to be picked up at a specific place, write it in the message below, and I will get back to you about it in the confirmation.</p>
+        <form action="https://formspree.io/info@flyingdutchboats.com"
+        method="POST" class="contact-form">
+        <div class="form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Eduke de Boer" class="form-control">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="email">Email:</label>
+            <input type="email" name="_replyto" id="email" placeholder="eduke@deboer.com" class="form-control">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="phone">Phone number:</label>
+            <input type="phone" name="phone" id="phone" placeholder="+31 6 12 34 56 78" class="form-control">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="date">Date:</label>
+            <input id="date" type="date" name="date">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="tour">Tour:</label>
+            <select name="tour">
+              <option value="Short but sweet">Short but Sweet - 1 hour tour</option>
+              <option value="More is better">More is better - 2 hours tour</option>
+            </select>
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="time">Requested time:</label>
+            <select name="time">
+              <option value="10:00">10:00</option>
+              <option value="12:00">12:00</option>
+              <option value="14:00">14:00</option>
+              <option value="16:00">16:00</option>
+              <option value="18:00">18:00</option>
+              <option value="18:00">20:00</option>
+            </select>
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="food">Food on Board:</label>
+            <select name="food">
+              <option value="No food">No food</option>
+              <option value="Garnish Hot">Flying Dutch Garnish Hot(€6,50 p.p)</option>
+              <option value="Garnish Basic">Flying Dutch Garnish Basic(€ 5,50 p.p.)</option>
+              <option value="Luxe Plateau">Flying Dutch Luxe Borrelplateau(€ 9,50 p.p.)</option>
+              <option value="Luxury">Flying Dutch Luxury(€ 12,50 p.p.)</option>
+            </select>
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="drinks">Drinks on Board:</label>
+            <select name="drinks">
+              <option value="No drinks">No drinks</option>
+              <option value="Basic Drinks">Flying Dutch Drinks Basic(€ 6.50 p.p. per hour)</option>
+              <option value="Media Drinks">Flying Dutch Drinks Media(€ 8.50 p.p. per hour)</option>
+              <option value="Luxury Drinks">Flying Dutch Drinks Deluxe(€ 11.50 p.p. per hour)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message to me:</label>
+            <textarea type="text" name="message" id="message" placeholder="We would like to ask you about .. " class="form-control"></textarea>
+          </div>
+          <input type="submit" value="Send" class='btn-red'>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
