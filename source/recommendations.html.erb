@@ -1,9 +1,7 @@
-<%= partial "_wrapper_grey_with_review", :locals => { :title => "Recommendations", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "_wrapper_grey_with_review", :locals => { :title => "Recommended By Dutchman", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
 <div class="wrapper-white">
   <div class="container">
-<h3 class="text-center">Restaurants</h3>
-<%= partial "image_grid", locals: { cards: data.restaurants } %>
-<h3 class="text-center margin-top">Bars</h3>
-<%= partial "image_grid", locals: { cards: data.bars } %>
-</div>
+    <%= partial "image_grid", locals: { cards: data.restaurants, title: "Restaurants" } %>
+    <%= partial "image_grid", locals: { cards: data.bars, title: "Bars" } %>
+  </div>
 </div>

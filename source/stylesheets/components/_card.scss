@@ -4,6 +4,7 @@
   position: relative;
   margin-top: 30px;
   background-size: cover;
+  display: block;
   .card-content {
     position: absolute;
     bottom: 20px;
@@ -22,11 +23,23 @@
     background-color: white;
     padding: 30px;
     transition: all 300ms ease;
+    z-index: -1;
   }
 }
 
-.card-hover:hover {
+.card-hover:hover, .card-hover:active {
   opacity: 0.9;
+  z-index: 9;
+}
+
+.card-picture:hover .card-hover {
+  opacity: 0.9;
+  z-index: 9;
+}
+
+.card-picture:active .card-hover {
+  opacity: 0.9;
+  z-index: 9;
 }
 
 .tour {
