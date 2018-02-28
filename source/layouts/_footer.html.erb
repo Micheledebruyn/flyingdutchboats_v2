@@ -7,9 +7,9 @@
       <img src="http://placehold.it/200x100" alt="Energy label">
     </div>
     <div class="information-footer">
-      <img src="images/logo-text.png" alt="Flying Dutch Boats logo">
-      <p>+31 647589217</p>
-      <p>info@flyingdutchboats.com</p>
+      <%= image_tag 'logo-text.png', class: "logo", alt: "Flying Dutch Boats logo" %>
+      <%= link_to "+31 647589217", "tel:+31647589217", class: "red-link" %>
+      <%= link_to "info@flyingdutchboats.com", "mailto:info@flyingdutchboats.com", class: "red-link" %>
     </div>
     <div class="tripadvisor-widget hidden-xs hidden-sm">
 
