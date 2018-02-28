@@ -1,0 +1,52 @@
+.container-faq {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq-list {
+  h3 {
+    color: $text-color;
+    font-size: 19px;
+  }
+  p {
+    color: $slightly-gray;
+    font-size: 15px;
+  }
+}
+
+.faq-list-preview {
+  li {
+    font-size: 15px;
+    padding: 10px 0;
+    a {
+      color: $red;
+      text-decoration: none;
+      &:hover, &:focus, &:visited, &:active {
+        color: $red;
+        text-decoration: none;
+      }
+    }
+    .sub-item {
+      color: $light-red;
+      text-decoration: none;
+      &:hover, &:focus, &:visited, &:active {
+        color: $light-red;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+.faq-breadcrumb {
+  color: $slightly-gray;
+  text-decoration: none;
+  p {
+    padding: 0 15px;
+  }
+  &:hover, &:visited, &:active, &:focus {
+    color: $slightly-gray;
+    text-decoration: none;
+  }
+}

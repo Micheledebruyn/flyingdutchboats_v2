@@ -1,0 +1,42 @@
+<div class="container-faq">
+  <div class="row">
+    <div class="col-xs-hidden col-sm-4">
+      <h3 class="catalyze-header">
+        FAQ
+      </h3>
+      <ul class="list-unstyled faq-list-preview">
+        <% data.faq.each_with_index do |hash, index| %>
+        <li>
+          <%= link_to hash["name"], "##{index}-invest" %>
+          <ul>
+            <% hash["qas"].each_with_index do |item, item_index| %>
+            <li>
+              <%= link_to item["question"],"#category-#{index}-question-#{item_index}", class: "sub-item"  %>
+            </li>
+            <% end %>
+          </ul>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-7 col-sm-offset-1">
+      <ul class="list-unstyled faq-list">
+        <% data.faq.each_with_index do |hash, index| %>
+        <h2 id="<%= index %>-invest">
+          <%= hash["name"] %>
+        </h2>
+        <% hash["qas"].each_with_index do |item, item_index| %>
+        <li id="category-<%= index %>-question-<%= item_index %>">
+          <h3>
+            <%= item["question"] %>
+          </h3>
+          <p>
+            <%= item["answer"] %>
+          </p>
+        </li>
+        <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
