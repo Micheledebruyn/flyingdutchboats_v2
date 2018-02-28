@@ -6,6 +6,15 @@
   top: 0;
   left: 0;
   background: $red;
+  z-index: 999;
+}
+
+#trigger-overlay {
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 /* Overlay closing cross */
@@ -62,6 +71,7 @@
 .overlay ul li a:hover,
 .overlay ul li a:focus {
   color: #f0f0f0;
+  outline: none;
 }
 
 
