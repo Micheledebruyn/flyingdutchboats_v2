@@ -2,6 +2,7 @@
 //= require bootstrap
 //= require carousel/owl.carousel
 
+document.addEventListener("touchstart", function() {},false);
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel();
