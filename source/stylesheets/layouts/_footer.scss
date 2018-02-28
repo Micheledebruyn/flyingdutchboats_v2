@@ -7,6 +7,10 @@
   }
   .information-footer {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     p {
       margin-bottom: 3px;
     }
