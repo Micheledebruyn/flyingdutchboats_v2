@@ -1,0 +1,36 @@
+- name: "Flying Dutch Boats"
+  qas:
+    - question: "How did your boat get so cool?"
+      answer: "Years of practice"
+- name: "Sélection des projets"
+  qas:
+    - question: "Comment sont sélectionnés les projets immobiliers à financer ?"
+      answer: "Ces projets sont sélectionnés selon une procédure très rigoureuse en 4 étapes :
+      1. Nous examinons l’éligibilité du projet sur base de critères généraux (track record du développeur, présence d’un endettement bancaire et apport en fonds propres minimum du développeur, permis et/ou autorisations obtenus, localisation du projet, …).
+      2. Nous analysons en détail la situation financière du promoteur ainsi qu’une quarantaine de critères financiers, techniques, juridiques et commerciaux portant sur le projet.
+      3. Cette analyse est ensuite présentée au comité de sélection composé d’éminents professionnels du secteur. Celui-ci émet son avis général et ses recommandations.
+      4. Catalyze prend ensuite la décision finale de financer ou non le projet concerné."
+- name: "Le financement d’un projet"
+  qas:
+    - question: "Quel est le processus de financement ?"
+      answer: "Le développeur immobilier ouvre un compte bancaire dédié à l’opération de levée de fonds. Ce compte est bloqué pendant toute la période de souscription et ce jusqu’à son terme. L’investissement se fait directement par virement bancaire sur ce compte. Au terme de la période de souscription, si le montant déterminé est atteint, le compte est débloqué et les fonds sont libérés en faveur du développeur."
+    - question: "Que se passe-t-il si le montant demandé n’est pas atteint ?"
+      answer: "Si le montant déterminé n’est pas atteint à la fin de la période de souscription, l’opération de financement n’a pas lieu et le montant récolté vous est intégralement et immédiatement restitué."
+    - question: "Combien de temps dure la période de levée de fonds ?"
+      answer: "La période de souscription dure de 4 à 6 semaines en fonction des projets."
+- name: "Mon investissement"
+  qas:
+    - question: "Quelle est la durée habituelle d’un investissement ?"
+      answer: "La durée de l’investissement est fonction de la durée du développement du projet et varie de 18 à 36 mois."
+    - question: "Quelle est la fréquence de remboursement de mon investissement ?"
+    - answer: "Les remboursements des intérêts sont effectués trimestriellement ou annuellement en fonction du projet. Le capital est remboursé en totalité à l’échéance."
+    - question: "Quel est le taux d’intérêt de mon investissement ?"
+      answer: "Le taux d’intérêt annuel est fixe et est directement fonction de la qualité du projet financé ainsi que de l’expérience du développeur immobilier. Il varie entre 7% et 9%."
+    - question: "Combien coûte Catalyze pour l’investisseur ?"
+      answer: "Les services de financement de Catalyze sont gratuits pour les investisseurs."
+    - question: "Comment suis-je informé de l’avancée du projet ?"
+      answer: "Catalyze vous fait parvenir un rapport trimestriel sur l’état d’avancement du projet (avancement des travaux et de la commercialisation)."
+    - question: "Quelle fiscalité s’applique à mon investissement ?"
+      answer: "Les intérêts sont imposables au titre de revenus mobiliers. Le taux de base du précompte mobilier est actuellement de 30%."
+    - question: "Comment investir dans un projet Catalyze ?"
+      answer: "Prenez contact avec nous ici et nous vous expliquerons comment participer au financement d’un projet Catalyze."
