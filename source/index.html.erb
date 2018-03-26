@@ -4,10 +4,10 @@ title: Flying Dutch Boats | Canal tour Amsterdam
 
 <div class="banner">
   <h1>
-    Experience Amsterdam from the water
+    <%= dato.canal_page.main_title %>
   </h1>
 </div>
-<%= partial "_wrapper_grey", :locals => { :title => "Old Amsterdam Canal Cruise", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "_wrapper_grey", :locals => { :title => dato.canal_page.title_introduction_text, :text => dato.canal_page.content_introduction_text } %>
 <div class="wrapper-white">
   <div class="container">
     <%= partial "additional_information" %>
