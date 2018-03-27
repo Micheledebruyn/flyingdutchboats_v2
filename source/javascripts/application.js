@@ -27,3 +27,31 @@ $(function() {
     }
   });
 });
+
+
+var allListItems = document.querySelectorAll('.two-column-list li');
+
+allListItems.forEach(function(item) {
+  var highlightOne = function(event) {
+    allListItems.forEach(function(item) {
+      item.classList.add('disabled');
+    });
+    event.currentTarget.classList.remove('disabled');
+  }
+
+  item.addEventListener('click', highlightOne);
+  item.addEventListener('mouseenter', highlightOne);
+});
+
+
+document.querySelectorAll('.two-column-list ul').forEach(function(item) {
+  item.addEventListener('mouseleave', function(event) {
+    allListItems.forEach(function(item) {
+      item.classList.remove('disabled');
+    });
+  });
+});
+
+
+
+
