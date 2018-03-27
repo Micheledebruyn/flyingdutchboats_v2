@@ -3,32 +3,32 @@
     <% link_to "index.html" do %>
     <%= image_tag 'logo-text.png', alt: "Logo Flying Dutch Boats", class: "logo" %>
     <% end %>
-    <div class="navbar-right-side hidden-xs hidden-sm">
+    <div class="navbar-right-side hidden-xs">
       <div class="navbar-top">
         <div class="social-items">
-          <% link_to "https://www.facebook.com/FlyingDutchBoats/", target: "_blank" do %>
+          <% link_to dato.social_medium.facebook_link, target: "_blank" do %>
           <i class="fab fa-facebook fa-2x"></i>
           <% end %>
 
-          <% link_to "https://www.instagram.com/flyingdutchboats/?hl=nl", target: "_blank" do %>
+          <% link_to dato.social_medium.instagram_link, target: "_blank" do %>
           <i class="fab fa-instagram fa-2x"></i>
           <% end %>
 
-          <% link_to "https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html", target: "_blank" do %>
+          <% link_to dato.social_medium.tripadvisor_link, target: "_blank" do %>
           <i class="fab fa-tripadvisor fa-2x" aria-hidden="true"></i>
           <% end %>
 
         </div>
-        <%= link_to "+31 647589217", "tel:+31647589217", class: "red-link" %>
-        <%= link_to "Book now!", "booking.html", class: "btn-red"  %>
+        <%= link_to dato.navigation_bar.phone_number, "tel:#{ dato.navigation_bar.phone_number }", class: "red-link" %>
+        <%= link_to dato.navigation_bar.book_button, "booking.html", class: "btn-red"  %>
       </div>
       <div class="navbar-bottom">
-        <%= link_to "Canal Cruises", "index.html" %>
-        <%= link_to "Boat Rental", "boat_rental.html" %>
-        <%= link_to "FAQ", "faq.html" %>
-        <%= link_to "Events", "events.html"  %>
-        <%= link_to "Recommendations", "recommendations.html"  %>
-        <%= link_to "Contact", "contact.html"  %>
+        <%= link_to dato.navigation_bar.link_canal_cruises, "index.html" %>
+        <%= link_to dato.navigation_bar.link_boat_rental, "boat_rental.html" %>
+        <%= link_to dato.navigation_bar.link_faq, "faq.html" %>
+        <%= link_to dato.navigation_bar.link_events, "events.html"  %>
+        <%= link_to dato.navigation_bar.link_recommendations, "recommendations.html"  %>
+        <%= link_to dato.navigation_bar.link_contact, "contact.html"  %>
       </div>
     </div>
 
@@ -41,29 +41,29 @@
       <nav>
         <ul>
          <li>
-           <%= link_to "Canal Cruises", "index.html", role: "menuitem", tabindex: "-1" %>  
-         </li> 
+           <%= link_to dato.navigation_bar.link_canal_cruises, "index.html", role: "menuitem", tabindex: "-1" %>
+         </li>
          <li>
-           <%= link_to "Boat Rental", "boat_rental.html", role: "menuitem", tabindex: "-1" %>  
-         </li> 
+           <%= link_to dato.navigation_bar.link_boat_rental, "boat_rental.html", role: "menuitem", tabindex: "-1" %>
+         </li>
          <li>
-           <%= link_to "FAQ", "faq.html", role: "menuitem", tabindex: "-1" %>  
-         </li> 
+           <%= link_to dato.navigation_bar.link_faq, "faq.html", role: "menuitem", tabindex: "-1" %>
+         </li>
          <li>
-           <%= link_to "Events", "events.html" , role: "menuitem", tabindex: "-1" %>  
-         </li> 
+           <%= link_to dato.navigation_bar.link_events, "events.html" , role: "menuitem", tabindex: "-1" %>
+         </li>
          <li>
-           <%= link_to "Recommendations", "recommendations.html" , role: "menuitem", tabindex: "-1" %>  
-         </li> 
+           <%= link_to dato.navigation_bar.link_recommendations, "recommendations.html" , role: "menuitem", tabindex: "-1" %>
+         </li>
          <li>
-           <%= link_to "Contact", "contact.html" , role: "menuitem", tabindex: "-1" %>  
-         </li> 
+           <%= link_to link_to dato.navigation_bar.link_contact, "contact.html" , role: "menuitem", tabindex: "-1" %>
+         </li>
          <li class="divider"></li>
          <li>
-          <%= link_to "Book now!", "booking.html", role: "menuitem", tabindex: "-1"  %>
+          <%= link_to link_to dato.navigation_bar.book_button, "booking.html", role: "menuitem", tabindex: "-1"  %>
         </li>
         <li>
-          <%= link_to "+31 647589217", "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
+          <%= link_to dato.navigation_bar.phone_number, "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
         </li>
       </ul>
     </nav>

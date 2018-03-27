@@ -10,4 +10,5 @@ gem 'pry-byebug', require: true
 # Assets
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
-# gem 'middleman-dato'
+gem 'middleman-livereload'
+gem "middleman-dato"
