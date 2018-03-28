@@ -2,6 +2,9 @@
   width: 100vw;
   background-color: $light-gray;
   height: 100%;
+  .wrapper-padding {
+    padding: 100px 0px;
+  }
 }
 
 .wrapper-white {
