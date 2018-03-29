@@ -1,12 +1,25 @@
 <div class="container review-container">
+  <h3 class="text-center">Our Happy Boaters</h3>
   <div class="row">
+    <% dato.reviews.each do |review| %>
     <div class="col-xs-12 col-sm-6">
       <div class="margin-top-bottom">
-        <h3>Customer Succes Story</h3>
-        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita a, ab eum omnis assumenda temporibus? Voluptates, aliquam quisquam. Provident, animi.</em></p>
-        <p> <strong>Harry Handvat</strong> </p>
+        <h4>
+          <%= review.review_title %>
+          </h4>
+        <p>
+          <em>
+            <%= review.review_content %>
+          </em>
+        </p>
+        <p>
+          <strong>
+          <%= review.review_author %>
+        </strong>
+      </p>
       </div>
     </div>
+    <% end %>
     <div class="col-xs-12 col-sm-6">
       <img src="http://placehold.it/300x200" alt="" class="margin-top-bottom full-width">
     </div>
