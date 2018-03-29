@@ -1,12 +1,12 @@
 <div class="container review-container">
   <h3 class="text-center">Our Happy Boaters</h3>
+  <% dato.reviews.each do |review| %>
   <div class="row">
-    <% dato.reviews.each do |review| %>
     <div class="col-xs-12 col-sm-6">
       <div class="margin-top-bottom">
         <h4>
           <%= review.review_title %>
-          </h4>
+        </h4>
         <p>
           <em>
             <%= review.review_content %>
@@ -14,15 +14,18 @@
         </p>
         <p>
           <strong>
-          <%= review.review_author %>
-        </strong>
-      </p>
+            <%= review.review_author %>
+          </strong>
+        </p>
       </div>
     </div>
-    <% end %>
     <div class="col-xs-12 col-sm-6">
-      <img src="http://placehold.it/300x200" alt="" class="margin-top-bottom full-width">
+      <%= image_tag review.review_image.url, alt: "Interior of the Flying Dutch Boat", class: "margin-top-bottom small-photo-width" %>
+
     </div>
+  </div>
+  <% end %>
+  <div class="row">
     <div class="col-xs-12">
       <h2 class="margin-top-bottom">
         Check out why people love us on <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html" target="_blank">Tripadvisor <i class="fab fa-tripadvisor"></i></a>
