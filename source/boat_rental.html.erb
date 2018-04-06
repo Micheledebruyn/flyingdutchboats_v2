@@ -28,96 +28,70 @@ title: Flying Dutch Boats | Private boat tour Amsterdam
 				<ul class="list-group">
 					<h3>
             <%= dato.drinks_appetizers_section.title_drink_section %>
-					</h3>
-            <% dato.drink_options.each do |option| %>
+          </h3>
+          <% dato.drink_options.each do |option| %>
           <li class="list-group-item">
-						<h4>
-							<%= option.title %>
-						</h4>
-						<p class="slightly-gray">
-							<%= option.content %> <span class="red-bordered-span"><%= option.price %></span>
-						</p>
-					</li>
-          <% end %>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-sm-6">
-				<ul class="list-group">
-					<h3>
-						<%= dato.drinks_appetizers_section.title_appetizer_section %>
-					</h3>
-          <% dato.food_options.each do |option| %>
-					<li class="list-group-item">
-						<h4>
-							<%= option.title %>
-						</h4>
-						<p class="slightly-gray">
-							<%= option.content %> <span class="red-bordered-span"><%= option.price %></span>
-						</p>
-					</li>
-          <% end %>
-				</ul>
-			</div>
-		</div>
-	</div>
+            <h4>
+             <%= option.title %>
+           </h4>
+           <p class="slightly-gray">
+             <%= option.content %> <span class="red-bordered-span"><%= option.price %></span>
+           </p>
+         </li>
+         <% end %>
+       </ul>
+     </div>
+     <div class="col-xs-12 col-sm-6">
+      <ul class="list-group">
+       <h3>
+        <%= dato.drinks_appetizers_section.title_appetizer_section %>
+      </h3>
+      <% dato.food_options.each do |option| %>
+      <li class="list-group-item">
+        <h4>
+         <%= option.title %>
+       </h4>
+       <p class="slightly-gray">
+         <%= option.content %> <span class="red-bordered-span"><%= option.price %></span>
+       </p>
+     </li>
+     <% end %>
+   </ul>
+ </div>
+</div>
+</div>
 </div>
 <div class="wrapper-white">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-4 col-sm-offset-2">
-				<div class="tour tour-1">
-					<div class="title-tour">
-						<h3>
-							Short
-						</br>
-						but
-						<br>
-						sweet
-					</h3>
-				</div>
-				<div class="line-expl-part">
-					<div class="title-line-tour"></div>
-					<div class="tour-expl">
-						<span><i class="far fa-clock" aria-hidden="true"></i>90 minutes</span>
-						<span><i class="fas fa-euro-sign" aria-hidden="true"></i>250,-</span>
-					</div>
-					<div class="title-line-tour"></div>
-				</div>
-				<div class="tour-description">
-					YES, one hour is highly recommended if you want to see and enjoy the old city and its canals because there is so much to do and see. In this canal tour we will go deeper into the Dutch history and you will see the biggest part of the city.
-				</div>
-				<div class="button-container">
-					<%= link_to "Book now", "/booking.html", class: "btn-red" %>
-				</div>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4">
-			<div class="tour tour-2">
-				<div class="title-tour">
-					<h3>
-						More
-						<br>
-						is
-						<br>
-						better
-					</h3>
-				</div>
-				<div class="line-expl-part">
-					<div class="title-line-tour"></div>
-					<div class="tour-expl">
-						<span><i class="far fa-clock" aria-hidden="true"></i> 2,5 hours</span>
-						<span><i class="fas fa-euro-sign" aria-hidden="true"></i>425,-</span>
-					</div>
-					<div class="title-line-tour"></div>
-				</div>
-				<div class="tour-description">
-					You already made it to Amsterdam, don't save on the wrong measures. This canal tour is probably the best choice for any person that loves Amsterdam. Get the full experience in this cruise and don't miss out on anything there is to see. For already hundreds of years the Dutch are sailing through this canals, and we will show you why.
-				</div>
-				<div class="button-container">
-					<%= link_to "Book now", "/booking.html", class: "btn-red" %>
-				</div>
-			</div>
-		</div>
-	</div>
+    <h2 class="text-center">
+      <%= dato.boat_rental_page.boat_section_title %>
+    </h2>
+    <div class="row">
+      <% dato.boat_tours.each do |tour| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="tour tour-1">
+           <div class="title-tour">
+            <h3>
+             <%= tour.boat_tour_title %>
+           </h3>
+         </div>
+         <div class="line-expl-part">
+           <div class="title-line-tour"></div>
+           <div class="tour-expl">
+            <span><i class="far fa-clock" aria-hidden="true"></i><%= tour.time %></span>
+            <span><i class="fas fa-euro-sign" aria-hidden="true"></i><%= tour.price %></span>
+          </div>
+          <div class="title-line-tour"></div>
+        </div>
+        <div class="tour-description">
+         <%= tour.text %>
+       </div>
+       <div class="button-container">
+         <%= link_to "Book now", "/booking.html", class: "btn-red" %>
+       </div>
+     </div>
+   </div>
+ <% end %>
+</div>
 </div>
 </div>
