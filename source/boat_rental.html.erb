@@ -1,92 +1,61 @@
 ---
 title: Flying Dutch Boats | Private boat tour Amsterdam
 ---
-<div class="banner" style="background-image: url(images/interior-scheepvaart.jpeg);">
+
+<div class="banner-boat-rental" style="background-image: linear-gradient(to top, #0000005c 24%, #00000052 18%), url( <%= dato.boat_rental_page.background_image.url%> );">
+  <div class="banner-title">
+    <h2>
+      <%= dato.boat_rental_page.main_title %>
+    </h2>
+  </div>
 </div>
-<%= partial "_wrapper_grey", :locals => { :title => "Private Boat Rental", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "_wrapper_grey", :locals => { :title => dato.boat_rental_page.title_introduction_text, text: dato.boat_rental_page.content_introduction_text } %>
 <div class="wrapper-white">
 	<div class="container">
 		<%= partial "images_selection" %>
 	</div>
 </div>
-<%= partial "_wrapper_grey", :locals => { :title => "Drinks and Appetizers", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "_wrapper_grey", :locals => { :title => dato.drinks_appetizers_section.title_introduction_text, :text => dato.drinks_appetizers_section.content_introduction_text } %>
 <div class="wrapper-white">
 	<div class="container">
 		<%= partial "images_selection" %>
 	</div>
 </div>
 <div class="wrapper-grey">
-	<%#= partial "dark_title", locals: { title: "Drinks and Appetizers"} %>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<ul class="list-group">
 					<h3>
-						Drink options
+            <%= dato.drinks_appetizers_section.title_drink_section %>
 					</h3>
-					<li class="list-group-item">
+            <% dato.drink_options.each do |option| %>
+          <li class="list-group-item">
 						<h4>
-							Flying Dutch Drinks Basic
+							<%= option.title %>
 						</h4>
 						<p class="slightly-gray">
-							Unlimited Heineken beer, wine and so  drinks <span class="red-bordered-span">€ 6.50 p.p. per hour</span>
+							<%= option.content %> <span class="red-bordered-span"><%= option.price %></span>
 						</p>
 					</li>
-					<li class="list-group-item">
-						<h4>
-							Flying Dutch Drinks Media
-						</h4>
-						<p class="slightly-gray">
-							Unlimited Heineken beer, wine, prosecco and so  drinks <span class="red-bordered-span">€ 8.50 p.p. per hour </span>
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4>
-							Flying Dutch Drinks Deluxe
-						</h4>
-						<p class="slightly-gray">
-							Unlimited Heineken beer, wine, prosecco, vodka, rum, whiskey, gin and so  drinks <span class="red-bordered-span">€ 11.50 p.p. per hour </span>
-						</p>
-					</li>
+          <% end %>
 				</ul>
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<ul class="list-group">
 					<h3>
-						Appetizers
+						<%= dato.drinks_appetizers_section.title_appetizer_section %>
 					</h3>
+          <% dato.food_options.each do |option| %>
 					<li class="list-group-item">
 						<h4>
-							Flying Dutch Garnish Hot
+							<%= option.title %>
 						</h4>
 						<p class="slightly-gray">
-							Croquettes, kaassoufles, chicken nuggets and frikandelletjes with three different sauces. <span class="red-bordered-span">€6,50 p.p.</span>
+							<%= option.content %> <span class="red-bordered-span"><%= option.price %></span>
 						</p>
 					</li>
-					<li class="list-group-item">
-						<h4>
-							Flying Dutch Garnish Basic
-						</h4>
-						<p class="slightly-gray">
-							Cheese, liver sausage, pickles, nuts and beef sausage Experience <span class="red-bordered-span">€ 5,50 p.p.</span>
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4>
-							Flying Dutch Luxe Borrelplateau
-						</h4>
-						<p class="slightly-gray">
-							Organic cheeses, fresh imported olives, the best humus in Amsterdam, sausage Brandt & Levie, and premium meats. All produce is sourced from local suppliers. A plateau is composed of at least 10 people. <span class="red-bordered-span">€ 9,50 p.p.</span> 
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4>
-							Flying Dutch Luxury
-						</h4>
-						<p class="slightly-gray">
-							Trimmings Wraps with salmon filling, wraps with chicken pesto stuffing, fruit skewers with mozzarella and tomatoes <span class="red-bordered-span">€ 12,50 p.p.</span>
-						</p>
-					</li>
+          <% end %>
 				</ul>
 			</div>
 		</div>
