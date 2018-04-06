@@ -1,19 +1,15 @@
-<%= partial "wrapper_grey", locals: {title: "Get in touch with the Flying Dutch", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "wrapper_grey", locals: {title: dato.contact_page.title_introduction_text, text: dato.contact_page.content_introduction_text } %>
 <div class="wrapper-white">
   <div class="container">
     <div class="row">
+      <% dato.team_members.each do |team_member| %>
       <div class="hidden-xs col-sm-3">
-        <img src="images/horizontal-drinks.jpeg" alt="Image contact page" class="thumbnail-round">
+        <%= image_tag team_member.image.url, class: "thumbnail-round" %>
+        <h5 class="text-center">
+          <%= team_member.name %>
+        </h5>
       </div>
-      <div class="hidden-xs col-sm-3">
-        <img src="images/horizontal-drinks.jpeg" alt="Image contact page" class="thumbnail-round">
-      </div>
-      <div class="hidden-xs col-sm-3">
-        <img src="images/horizontal-drinks.jpeg" alt="Image contact page" class="thumbnail-round">
-      </div>
-      <div class="hidden-xs col-sm-3">
-        <img src="images/horizontal-drinks.jpeg" alt="Image contact page" class="thumbnail-round">
-      </div>
+      <% end %>
     </div>
     <div class="row">
       <div class="col-xs-12">
