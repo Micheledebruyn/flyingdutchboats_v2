@@ -1,7 +1,43 @@
 <%= partial "_wrapper_grey_with_review", :locals => { :title => "Recommended By Dutchman", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
 <div class="wrapper-white">
   <div class="container">
-    <%= partial "image_grid", locals: { cards: data.restaurants, title: "Restaurants" } %>
-    <%= partial "image_grid", locals: { cards: data.bars, title: "Bars" } %>
+    <div class="row">
+      <h3 class="text-center">
+        Restaurants
+      </h3>
+      <% dato.restaurants_collections.each do |card| %>
+      <div class="col-xs-12 col-sm-4">
+        <a class="card-picture" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.12) 0%, rgba(74, 51, 51, 0.5) 50%), url('<%= image_path card.image.url %>');">
+          <div class="card-content">
+            <h3>
+              <%= card.title %>
+            </h3>
+            <p>
+              <%= card.subtitle %>
+            </p>
+          </div>
+        </a>
+      </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <h3 class="text-center">
+        Cafe's
+      </h3>
+      <% dato.cafe_collections.each do |card| %>
+      <div class="col-xs-12 col-sm-4">
+        <a class="card-picture" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%), url('<%= image_path card.image.url %>');">
+          <div class="card-content">
+            <h3>
+              <%= card.title %>
+            </h3>
+            <p>
+              <%= card.subtitle %>
+            </p>
+          </div>
+        </a>
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>

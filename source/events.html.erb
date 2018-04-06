@@ -1,7 +1,8 @@
-<%= partial "_wrapper_grey", :locals => { :title => "Events", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "_wrapper_grey", :locals => { :title => dato.events_page.title_introduction_text, :text => dato.events_page.content_introduction_text
+ } %>
 
 <div class="wrapper-white">
   <div class="container">
-    <%= partial "image_grid", locals: { cards: data.events, title: "" } %>
+    <%= partial "image_grid" %>
   </div>
 </div>
