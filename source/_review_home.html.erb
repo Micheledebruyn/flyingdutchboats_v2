@@ -1,35 +1,35 @@
-<div class="container review-container">
-  <h3 class="text-center">Our Happy Boaters</h3>
-  <% dato.reviews.each do |review| %>
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <div class="margin-top-bottom">
-        <h4>
-          <%= review.review_title %>
-        </h4>
-        <p>
-          <em>
-            <%= review.review_content %>
-          </em>
-        </p>
-        <p>
-          <strong>
-            <%= review.review_author %>
-          </strong>
-        </p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <%= image_tag review.review_image.url, alt: "Interior of the Flying Dutch Boat", class: "margin-top-bottom small-photo-width" %>
+<h3 class="text-center padded">
+  Our Happy Boaters
+</h3>
 
+<% dato.reviews.each_with_index do |review, index| %>
+  <% if index == 0 %>
+    <div class="tab-content" id="tab-target-<%= index %>">
+      <%= partial "review", locals: { review: review } %>
     </div>
-  </div>
+  <% else %>
+    <div class="tab-content hidden" id="tab-target-<%= index %>">
+      <%= partial "review", locals: { review: review } %>
+    </div>
   <% end %>
-  <div class="row">
-    <div class="col-xs-12">
-      <h2 class="margin-top-bottom">
-        Check out why people love us on <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html" target="_blank">Tripadvisor <i class="fab fa-tripadvisor"></i></a>
-      </h2>
-    </div>
-  </div>
+<% end %>
+
+<div class="tabs">
+  <% dato.reviews.each_with_index do |review, index| %>
+    <% if index == 0 %>
+      <a href="#" class="tab active" data-target="tab-target-<%= index %>">
+        ●
+      </a>
+    <% else %>
+      <a href="#" class="tab" data-target="tab-target-<%= index %>">
+        ○
+      </a>
+    <% end %>
+  <% end %>
 </div>
+
+
+<h2 class="text-center padded">
+  Check out why people love us on <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html" target="_blank">Tripadvisor <i class="fab fa-tripadvisor"></i></a>
+</h2>
+
