@@ -1,0 +1,18 @@
+<div class="review">
+  <%= image_tag review.review_image.url, alt: "Interior of the Flying Dutch Boat" %>
+  <div class="review-content">
+    <h4>
+      <%= review.review_title %>
+    </h4>
+    <p>
+      <em>
+        <%= review.review_content %>
+      </em>
+    </p>
+    <p>
+      <strong>
+        <%= review.review_author %>
+      </strong>
+    </p>
+  </div>
+</div>
