@@ -11,9 +11,7 @@ title: Flying Dutch Boats | Private boat tour Amsterdam
 </div>
 <%= partial "_wrapper_grey", :locals => { :title => dato.boat_rental_page.title_introduction_text, text: dato.boat_rental_page.content_introduction_text } %>
 <div class="wrapper-white">
-	<div class="container">
-		<%= partial "images_selection" %>
-	</div>
+  <%= partial "images_selection" %>
 </div>
 <%= partial "_wrapper_grey", :locals => { :title => dato.drinks_appetizers_section.title_introduction_text, :text => dato.drinks_appetizers_section.content_introduction_text } %>
 <div class="wrapper-white">
@@ -68,29 +66,29 @@ title: Flying Dutch Boats | Private boat tour Amsterdam
     </h2>
     <div class="row">
       <% dato.boat_tours.each do |tour| %>
-        <div class="col-xs-12 col-sm-4">
-          <div class="tour tour-1">
-           <div class="title-tour">
-            <h3>
-             <%= tour.boat_tour_title %>
-           </h3>
-         </div>
-         <div class="line-expl-part">
-           <div class="title-line-tour"></div>
-           <div class="tour-expl">
-            <span><i class="far fa-clock" aria-hidden="true"></i><%= tour.time %></span>
-            <span><i class="fas fa-euro-sign" aria-hidden="true"></i><%= tour.price %></span>
-          </div>
-          <div class="title-line-tour"></div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="tour tour-1">
+         <div class="title-tour">
+          <h3>
+           <%= tour.boat_tour_title %>
+         </h3>
+       </div>
+       <div class="line-expl-part">
+         <div class="title-line-tour"></div>
+         <div class="tour-expl">
+          <span><i class="far fa-clock" aria-hidden="true"></i><%= tour.time %></span>
+          <span><i class="fas fa-euro-sign" aria-hidden="true"></i><%= tour.price %></span>
         </div>
-        <div class="tour-description">
-         <%= tour.text %>
-       </div>
-       <div class="button-container">
-         <%= link_to "Book now", "/booking.html", class: "btn-red" %>
-       </div>
+        <div class="title-line-tour"></div>
+      </div>
+      <div class="tour-description">
+       <%= tour.text %>
+     </div>
+     <div class="button-container">
+       <%= link_to "Book now", "/booking.html", class: "btn-red" %>
      </div>
    </div>
+ </div>
  <% end %>
 </div>
 </div>
