@@ -4,10 +4,10 @@
             10 Do's in Amsterdam
           </h3>
           <ul>
-            <% dato.join_us_collections.each do |argument| %>
+            <% dato.do_collections.each do |do_item| %>
             <li>
               <p>
-                <%= argument.join_us_reason %>
+                <%= do_item.argument %>
               </p>
               <span class="underline"></span>
             </li>
@@ -19,10 +19,10 @@
             10 Don'ts in Amsterdam
           </h3>
           <ul>
-            <% dato.dont_join_us_collections.each do |argument| %>
+            <% dato.dont_collections.each do |dont_item| %>
             <li>
               <p>
-                <%= argument.dont_join_us_reason %>
+                <%= dont_item.argument %>
               </p>
               <span class="underline"></span>
             </li>
