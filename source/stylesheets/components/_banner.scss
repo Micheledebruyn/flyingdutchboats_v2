@@ -1,9 +1,9 @@
 .banner {
   display: flex;
+  position: relative;
   .banner-image {
-    flex: 0 1 50%;
+    flex: 1 1 50%;
     background-image: image-url('voorpagina-afbeelding.jpeg');
-    height: 400px;
     background-size: cover;
     background-position: center;
   }
@@ -37,11 +37,12 @@
 
 @media(min-width: 968px) {
   .banner {
+    height: 500px;
   }
 }
 
 @media(max-width: 967px) {
   .banner {
-    height: 300px;
+    height: 200px;
   }
 }

@@ -29,3 +29,26 @@
 .padded {
   padding: 50px 0;
 }
+
+@media (max-width: 767px) {
+  .visible-xs-flex {
+    display: flex !important;
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner .banner-title h1 {
+    font-size: 28px;
+  }
+  .visible-xs-flex {
+    display: none !important;
+  }
+}
+ @media (min-width: 1024px) {
+  .visible-xs-flex {
+    display: none !important;
+  }
+}
