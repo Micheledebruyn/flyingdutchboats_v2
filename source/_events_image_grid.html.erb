@@ -4,7 +4,7 @@
   </h3>
   <% dato.events_collections.each do |card| %>
     <div class="col-xs-12 col-sm-4">
-      <a class="card-picture" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%), url('<%= image_path card.image.url %>');">
+      <div class="card-picture" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%), url('<%= image_path card.image.url %>');">
         <div class="card-content">
           <h3>
             <%= card.title %>
@@ -16,12 +16,11 @@
         <div class="card-hover">
           <div class="card-hover-content">
             <p>
-              <!-- TODO: FIX ON HOVER -->
-              <%#= card.content %>
+              <%= card.content %>
             </p>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   <% end %>
 </div>
