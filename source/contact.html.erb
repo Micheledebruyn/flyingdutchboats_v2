@@ -3,11 +3,13 @@
   <div class="container">
     <div class="row">
       <% dato.team_members.each do |team_member| %>
-      <div class="hidden-xs col-sm-3">
+      <div class="hidden-xs col-sm-6 col-md-3">
+        <div class="centered-thumbnail">
         <%= image_tag team_member.image.url, class: "thumbnail-round" %>
         <h5 class="text-center">
           <%= team_member.name %>
         </h5>
+        </div>
       </div>
       <% end %>
     </div>
