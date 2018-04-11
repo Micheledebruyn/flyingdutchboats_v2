@@ -19,7 +19,7 @@
           <% end %>
 
         </div>
-        <%= link_to dato.navigation_bar.phone_number, "tel:#{ dato.navigation_bar.phone_number }", class: "red-link" %>
+        <%= link_to "+31 647 589217", "tel:+31 647 589217", class: "red-link" %>
         <%= link_to dato.navigation_bar.book_button, "booking.html", class: "btn-red"  %>
       </div>
       <div class="navbar-bottom">
@@ -63,7 +63,7 @@
           <%= link_to link_to dato.navigation_bar.book_button, "booking.html", role: "menuitem", tabindex: "-1"  %>
         </li>
         <li>
-          <%= link_to dato.navigation_bar.phone_number, "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
+          <%= link_to "+31 647 589217", "tel:+31647589217", role: "menuitem", tabindex: "-1" %>
         </li>
       </ul>
     </nav>

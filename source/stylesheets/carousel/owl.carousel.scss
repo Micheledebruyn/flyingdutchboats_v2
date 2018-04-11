@@ -3,3 +3,10 @@
 @import 'autoheight';
 @import 'lazyload';
 @import 'video';
+
+.carousel-image {
+  height: 250px;
+  margin: 0 30px;
+  background-size: cover;
+  background-position: center;
+}

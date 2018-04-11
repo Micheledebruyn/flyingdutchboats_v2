@@ -1,0 +1,32 @@
+<div class="two-column-list">
+        <div class="first-column">
+          <h3>
+            10 Do's in Amsterdam
+          </h3>
+          <ul>
+            <% dato.do_collections.each do |do_item| %>
+            <li>
+              <p>
+                <%= do_item.argument %>
+              </p>
+              <span class="underline"></span>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="second-column">
+          <h3>
+            10 Don'ts in Amsterdam
+          </h3>
+          <ul>
+            <% dato.dont_collections.each do |dont_item| %>
+            <li>
+              <p>
+                <%= dont_item.argument %>
+              </p>
+              <span class="underline"></span>
+            </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>

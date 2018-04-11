@@ -1,7 +1,11 @@
-<%= partial "_wrapper_grey_with_review", :locals => { :title => "Recommended By Dutchman", :text => " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quos nihil cum, doloribus qui dolore, quae molestiae, neque nulla excepturi unde blanditiis rerum corporis. Accusantium laborum voluptas debitis tempora vero, repellat molestiae distinctio voluptatibus cum nemo libero cumque laudantium provident culpa quod dolorem perferendis, accusamus officiis assumenda dolore dicta blanditiis!" } %>
+<%= partial "_wrapper_grey_with_review", :locals => { :title => dato.recommendations_page.title_introduction_text, :text => dato.recommendations_page.content_introduction_text } %>
+
 <div class="wrapper-white">
   <div class="container">
-    <%= partial "image_grid", locals: { cards: data.restaurants, title: "Restaurants" } %>
-    <%= partial "image_grid", locals: { cards: data.bars, title: "Bars" } %>
+    <div class="row">
+      <%= partial "do_and_dont" %>
+    </div>
+    <%= partial "restaurants_grid" %>
+    <%= partial "cafes_grid" %>
   </div>
 </div>

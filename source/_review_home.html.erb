@@ -1,19 +1,35 @@
-<div class="container review-container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <div class="margin-top-bottom">
-        <h3>Customer Succes Story</h3>
-        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita a, ab eum omnis assumenda temporibus? Voluptates, aliquam quisquam. Provident, animi.</em></p>
-        <p> <strong>Harry Handvat</strong> </p>
-      </div>
+<h3 class="text-center padded">
+  <%= dato.tripadvisor_review_section.section_title %>
+</h3>
+
+<% dato.reviews.each_with_index do |review, index| %>
+  <% if index == 0 %>
+    <div class="tab-content" id="tab-target-<%= index %>">
+      <%= partial "review", locals: { review: review } %>
     </div>
-    <div class="col-xs-12 col-sm-6">
-      <img src="http://placehold.it/300x200" alt="" class="margin-top-bottom full-width">
+  <% else %>
+    <div class="tab-content hidden" id="tab-target-<%= index %>">
+      <%= partial "review", locals: { review: review } %>
     </div>
-    <div class="col-xs-12">
-      <h2 class="margin-top-bottom">
-        Check out why people love us on <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html" target="_blank">Tripadvisor <i class="fab fa-tripadvisor"></i></a>
-      </h2>
-    </div>
-  </div>
+  <% end %>
+<% end %>
+
+<div class="tabs">
+  <% dato.reviews.each_with_index do |review, index| %>
+    <% if index == 0 %>
+      <a href="#" class="tab active" data-target="tab-target-<%= index %>">
+        ●
+      </a>
+    <% else %>
+      <a href="#" class="tab" data-target="tab-target-<%= index %>">
+        ○
+      </a>
+    <% end %>
+  <% end %>
 </div>
+
+
+<h2 class="text-center padded">
+  Check out why people love us on <a href="https://www.tripadvisor.nl/Attraction_Review-g188590-d12691954-Reviews-Flying_Dutch_Boats-Amsterdam_North_Holland_Province.html" target="_blank">Tripadvisor <i class="fab fa-tripadvisor"></i></a>
+</h2>
+

@@ -1,35 +1,35 @@
 @-webkit-keyframes icon-flip-green {
-  0%  { 
+  0%  {
     content: "+";
     color: inherit;
     opacity: 1;
   }
-  50%  { 
+  50%  {
     content: "+";
     color: inherit;
     opacity: 0;
   }
-  100% {         
+  100% {
     content: "✓";
-    color: green; 
+    color: green;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes icon-flip-red {
-  0%  { 
+  0%  {
     content: "+";
     color: inherit;
     opacity: 1;
   }
-  50%  { 
+  50%  {
     content: "+";
     color: inherit;
     opacity: 0;
   }
-  100% {         
+  100% {
     content: "x";
-    color: red; 
+    color: red;
     opacity: 1;
   }
 }
@@ -41,6 +41,8 @@
   .first-column, .second-column {
     flex: 0 0 50%;
     padding: 0 50px;
+    max-width: 500px;
+    margin: 0 auto;
     ul {
       list-style: none;
       padding: 0;

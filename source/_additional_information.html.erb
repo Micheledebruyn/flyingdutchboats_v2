@@ -1,51 +1,20 @@
 <div class="row">
-  <div class="col-xs-6 col-sm-5 col-sm-offset-2">
+  <div class="hidden-xs hidden-sm col-md-5 col-md-offset-1">
+    <%= image_tag dato.additional_information.image.url, class: "vertical-photo-height" %>
+  </div>
+  <div class="col-xs-12 col-md-5">
     <ul class="list-style-none">
+      <% dato.additional_information_topics.each do |topic| %>
       <li>
-        <h3>Hop On</h3>
-        <p>Book your tickets for the shared boat on board or online <a href="/booking.html">here.</a></p>
+        <h3>
+          <%= topic.title  %>
+        </h3>
+        <p>
+          <%= topic.content %>
+        </p>
         <!-- To do: Need to do some scroll below here -->
       </li>
-      <li>
-        <h3>Bar</h3>
-        <p>Extensive on-board bar with local drinks.</p>
-      </li>
-      <li>
-        <h3>Times</h3>
-        <p>Times are estimaded times, please call or message on your booked day.</p>
-      </li>
-      <li>
-        <h3>Other Questions?</h3>
-        <p>Have a look at our <a href="/faq.html">FAQ</a>. For other questions please call or message me at +31 647589217. Or start up our live chat.</p>
-      </li>
-      <li>
-        <h3>Roof</h3>
-        <p>In the wintertime and rainy days the boat will operate with a roof.</p>
-      </li>
-    </ul>
-  </div>
-  <div class="col-xs-6 col-sm-5">
-    <h3>Highlights</h3>
-    <p>During our cruise we will visit:</p>
-    <ul class="list-items-red">
-      <li>
-        <p>Carré</p>
-      </li>
-      <li>
-        <p>Hermitage Amsterdam</p>
-      </li>
-      <li>
-        <p>National Maritime Museum</p>
-      </li>
-      <li>
-        <p>Nemo</p>
-      </li>
-      <li>
-        <p>Amstel River</p>
-      </li>
-      <li>
-        <p>Skinny Bridge</p>
-      </li>
+      <% end %>
     </ul>
   </div>
 </div>

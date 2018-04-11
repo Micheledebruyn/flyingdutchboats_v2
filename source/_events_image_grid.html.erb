@@ -1,0 +1,27 @@
+<div class="row">
+  <h3 class="text-center">
+    Events
+  </h3>
+  <% dato.events_collections.each do |card| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card-picture" style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%), url('<%= image_path card.image.url %>');">
+        <div class="card-content">
+          <h3>
+            <%= card.title %>
+          </h3>
+          <p>
+            <%= card.date %>
+          </p>
+        </div>
+        <div class="card-hover">
+          <div class="card-hover-content">
+            <p>
+              <%= card.content %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+

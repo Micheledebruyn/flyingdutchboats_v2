@@ -1,10 +1,11 @@
 .wrapper-grey {
-  width: 100vw;
+  width: 100%;
   background-color: $light-gray;
   height: 100%;
-  .wrapper-padding {
-    padding: 100px 0px;
-  }
+}
+
+.wrapper-padding {
+  padding: 100px 0px;
 }
 
 .wrapper-white {
@@ -17,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   .paragraph-container {
-    text-align: center;
+    text-align: left;
     line-height: 1.8;
     color: rgba(51,51,51,0.9);
     font-size: 16px;
@@ -30,24 +31,26 @@
   align-items: center;
 }
 
-@media(min-width: 968px) {
+@media(min-width: 769px) {
   .wrapper-review {
     margin-top: 33%;
   }
   .paragraph-container {
     width: 70%;
+    column-count: 2;
   }
   .review-container {
     width: 55%;
   }
 }
 
-@media(max-width: 967px) {
+@media(max-width: 768px) {
   .wrapper-review {
     margin-bottom: 30px;
   }
   .paragraph-container {
     width: 90%;
+    column-count: 1;
     p {
       font-size: 16px;
     }
