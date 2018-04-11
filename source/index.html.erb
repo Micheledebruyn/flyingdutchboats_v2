@@ -1,18 +1,7 @@
 ---
 title: Flying Dutch Boats | Canal tour Amsterdam
 ---
-<div class="banner">
-  <div class="banner-title hidden-xs">
-    <h1>
-      <%= dato.canal_page.main_title %>
-    </h1>
-  </div>
-  <div class="banner-image">
-  </div>
-  <div class="button-container-main visible-xs-flex">
-    <%= link_to "Become a pirate", "booking.html", class: "red-mobile-button"  %>
-  </div>
-</div>
+<%= partial "main_banner", locals: { title: dato.canal_page.main_title, image: dato.canal_page.background_image.url, cta: dato.canal_page.cta_button } %>
 <%= partial "_wrapper_grey", :locals => { :title => dato.canal_page.title_introduction_text, :text => dato.canal_page.content_introduction_text } %>
 <div class="wrapper-white">
   <div class="container">
@@ -20,7 +9,7 @@ title: Flying Dutch Boats | Canal tour Amsterdam
   </div>
 </div>
 <div class="wrapper-grey wrapper-padding">
-  <%= partial "images_selection" %>
+  <%= partial "images_selection", locals: { image_collection: dato.first_photo_carousel_rental_pages } %>
 </div>
 <div class="wrapper-white">
   <%= partial "two_list_columns" %>

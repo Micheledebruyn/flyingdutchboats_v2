@@ -1,15 +1,8 @@
 <!-- Set up your HTML -->
 <div class="owl-carousel">
-    <div> 
-      <%= image_tag "interior-2.jpeg", alt: "Interior of the Flying Dutch Boat" %>
+  <% image_collection.each do |photo| %>
+    <div>
+      <%= image_tag photo.image.url %>
     </div>
-    <div> 
-      <%= image_tag "interior-2.jpeg", alt: "Interior of the Flying Dutch Boat" %>
-    </div>
-    <div> 
-      <%= image_tag "interior-2.jpeg", alt: "Interior of the Flying Dutch Boat" %>
-    </div>
-    <div> 
-      <%= image_tag "interior-2.jpeg", alt: "Interior of the Flying Dutch Boat" %>
-    </div>
+    <% end %>
 </div>

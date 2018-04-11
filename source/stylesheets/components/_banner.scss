@@ -1,22 +1,26 @@
 .banner {
-  display: flex;
   position: relative;
-  .banner-image {
-    flex: 1 1 50%;
-    background-image: image-url('voorpagina-afbeelding.jpeg');
-    background-size: cover;
-    background-position: center;
-  }
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   .banner-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image:  linear-gradient(to top, #ff0844 0%, #d66c4b 100%);
-    flex: 0 1 50%;
     padding: 50px;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
     h1 {
+      text-shadow: 2px 2px 4px rgba(1,1,1,0.3);
       color: white;
     }
+  }
+  .red-mobile-button {
+    margin-top: 20px;
   }
 }
 
