@@ -22,7 +22,7 @@ var tabContents = document.querySelectorAll('.tab-content')
 tabs.forEach(function(tab) {
   tab.addEventListener('click', function(event) {
     event.preventDefault();
-    let target = event.currentTarget.dataset.target
+    var target = event.currentTarget.dataset.target
     clearTabContents()
     document.getElementById(target).classList.remove('hidden')
     clearTabs()
