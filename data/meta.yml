@@ -1,26 +1,24 @@
 geo_placename: Amsterdam
-geo_position: "52.3702;4.8952"
+geo_position: "52.375926;4.883934"
 geo_region: NL
 
 name: Flying Dutch Boats
 description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
-image: "https://micheledebruyn.github.io/flyingdutchboats/images/logo-text.png"
+image: "meta.jpg"
 
 fb_site_name: Flying Dutch Boats
 fb_title: Flying Dutch Boats
 fb_description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
-fb_image: "https://micheledebruyn.github.io/flyingdutchboats/images/logo-text.png"
+fb_image: "meta.jpg"
 fb_type: Website
 fb_url: http://flyingdutchboats.com
 
 google_name: Flying Dutch Boats
 google_description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
-google_image: "https://micheledebruyn.github.io/flyingdutchboats/images/logo-text.png"
+google_image: "meta.jpg"
 
 
-
-# To do: write meta for twitter for fdb
-# twitter_card_type: summary_large_image
-# twitter_title: Codam - Write Your Future
-# twitter_description: Codam will open its doors in Amsterdam in September 2018.
-# twitter_image: "meta.png"
+twitter_card_type: summary_large_image
+twitter_title: Flying Dutch Boats
+twitter_description: Discover historic Amsterdam through our unforgettable canal tour. Hop on board of this luxury ship with ice cold drinks and the guidance of a real Dutchman.
+twitter_image: "meta.jpg"
