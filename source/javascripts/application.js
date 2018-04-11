@@ -10,8 +10,27 @@ document.addEventListener("touchstart", function() {},false);
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-    stagePadding: 50,
-    loop: true
+    loop: true,
+    responsive:{
+      0:{
+        items:1,
+        loop: true,
+        nav:true,
+        stagePadding: 50
+      },
+      600:{
+        items:2,
+        loop: true,
+        nav:true,
+        stagePadding: 50
+      },
+      1000:{
+        items:3,
+        nav:true,
+        loop:true,
+        stagePadding: 50
+      }
+    }
   });
 });
 
