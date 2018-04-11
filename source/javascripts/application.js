@@ -9,7 +9,10 @@
 document.addEventListener("touchstart", function() {},false);
 
 $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+  $(".owl-carousel").owlCarousel({
+    stagePadding: 50,
+    loop: true
+  });
 });
 
 var tabs = document.querySelectorAll('.tab')

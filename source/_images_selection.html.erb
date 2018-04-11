@@ -1,8 +1,7 @@
 <!-- Set up your HTML -->
 <div class="owl-carousel">
   <% image_collection.each do |photo| %>
-    <div>
-      <%= image_tag photo.image.url %>
+    <div class="carousel-image" style="background-image:url('<%= photo.image.url %>');">
     </div>
     <% end %>
 </div>
