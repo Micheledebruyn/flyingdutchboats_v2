@@ -8,7 +8,7 @@
 <% end %>
 
 
-<%= partial "main_banner", locals: { title: dato.boat_rental_page.main_title, image: dato.boat_rental_page.background_image.url, cta: dato.boat_rental_page.cta_button } %>
+<%= partial "main_banner", locals: { title: dato.boat_rental_page.main_title, image: dato.boat_rental_page.background_image.url, cta: dato.boat_rental_page.cta_button, button_target: "#form" } %>
 
 <%= partial "_wrapper_grey", :locals => { :title => dato.boat_rental_page.title_introduction_text, text: dato.boat_rental_page.content_introduction_text } %>
 <div class="wrapper-white">
@@ -19,6 +19,40 @@
 		<%= partial "images_selection", locals: { image_collection: dato.second_photo_carousel_rental_pages } %>
 </div>
 <div class="wrapper-grey">
+  <div class="container">
+    <h2 class="text-center">
+      <%= dato.boat_rental_page.boat_section_title %>
+    </h2>
+    <div class="row">
+      <% dato.boat_tours.each do |tour| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="tour tour-1">
+         <div class="title-tour">
+          <h3>
+           <%= tour.boat_tour_title %>
+         </h3>
+       </div>
+       <div class="line-expl-part">
+         <div class="title-line-tour"></div>
+         <div class="tour-expl">
+          <span><i class="far fa-clock" aria-hidden="true"></i><%= tour.time %></span>
+          <span><i class="fas fa-euro-sign" aria-hidden="true"></i><%= tour.price %></span>
+        </div>
+        <div class="title-line-tour"></div>
+      </div>
+      <div class="tour-description">
+       <%= tour.text %>
+     </div>
+     <div class="button-container">
+       <%= link_to "Book now", "/booking.html", class: "btn-red" %>
+     </div>
+   </div>
+ </div>
+ <% end %>
+</div>
+</div>
+</div>
+<div class="wrapper-white">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
@@ -58,37 +92,5 @@
 </div>
 </div>
 </div>
-<div class="wrapper-white">
-	<div class="container">
-    <h2 class="text-center">
-      <%= dato.boat_rental_page.boat_section_title %>
-    </h2>
-    <div class="row">
-      <% dato.boat_tours.each do |tour| %>
-      <div class="col-xs-12 col-sm-4">
-        <div class="tour tour-1">
-         <div class="title-tour">
-          <h3>
-           <%= tour.boat_tour_title %>
-         </h3>
-       </div>
-       <div class="line-expl-part">
-         <div class="title-line-tour"></div>
-         <div class="tour-expl">
-          <span><i class="far fa-clock" aria-hidden="true"></i><%= tour.time %></span>
-          <span><i class="fas fa-euro-sign" aria-hidden="true"></i><%= tour.price %></span>
-        </div>
-        <div class="title-line-tour"></div>
-      </div>
-      <div class="tour-description">
-       <%= tour.text %>
-     </div>
-     <div class="button-container">
-       <%= link_to "Book now", "/booking.html", class: "btn-red" %>
-     </div>
-   </div>
- </div>
- <% end %>
-</div>
-</div>
-</div>
+
+<%= partial "private_booking" %>

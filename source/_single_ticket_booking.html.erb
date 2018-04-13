@@ -1,19 +1,45 @@
 <div class="container">
-  <%= partial "dark_title", locals: { title: "Hop on our Flagship Cruise"} %>
+  <%= partial "dark_title", locals: { title: "Join us on the shared boat"} %>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <ul class="list-style-none">
-      <% dato.single_ticket_informations.each do |topic| %>
-      <li>
-        <h3>
-          <%= topic.single_ticket_information_title  %>
-        </h3>
-        <p>
-          <%= topic.single_ticket_information_content %>
-        </p>
-      </li>
-      <% end %>
-    </ul>
+        <form action="https://formspree.io/info@flyingdutchboats.com"
+        method="POST" class="contact-form">
+        <div class="form">
+          <input type="hidden" value="shared boat ticket">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" class="form-control">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="email">Email:</label>
+            <input type="email" name="_replyto" id="email" placeholder="eduke@deboer.com" class="form-control">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="phone">Phone number:</label>
+            <input type="phone" name="phone" id="phone" placeholder="+31 6 12 34 56 78" class="form-control">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="date">Date:</label>
+            <input id="date" type="date" name="date">
+          </div>
+          <div class="form-group" id="bottom-input-left">
+            <label for="time">Time indication:</label>
+            <select name="time">
+              <option value="10:00">10:00</option>
+              <option value="12:00">12:00</option>
+              <option value="14:00">14:00</option>
+              <option value="16:00">16:00</option>
+              <option value="18:00">18:00</option>
+              <option value="18:00">20:00</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message to me:</label>
+            <textarea type="text" name="message" id="message" placeholder="We would like to ask you about .. " class="form-control"></textarea>
+          </div>
+          <input type="submit" value="Send" class='btn-red'>
+        </div>
+      </form>
     </div>
     <div class="col-xs-12 col-sm-6">
       <h3 class="remove-top-margin">Pick up</h3>
