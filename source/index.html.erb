@@ -7,21 +7,21 @@
   <% dato.canal_page.meta_description %>
 <% end %>
 
-<%= partial "main_banner", locals: { title: dato.canal_page.main_title, image: dato.canal_page.background_image.url, cta: dato.canal_page.cta_button } %>
+<%= partial "main_banner", locals: { title: dato.canal_page.main_title, image: dato.canal_page.background_image.url, cta: dato.canal_page.cta_button, button_target: "booking.html" } %>
 <%= partial "_wrapper_grey", :locals => { :title => dato.canal_page.title_introduction_text, :text => dato.canal_page.content_introduction_text } %>
+<div class="wrapper-white wrapper-padding">
+  <%= partial "images_selection", locals: { image_collection: dato.photo_carousel_home_pages } %>
+</div>
+<div class="wrapper-grey">
+  <%= partial "two_list_columns" %>
+</div>
 <div class="wrapper-white">
+  <%= partial "review_home" %>
+</div>
+<div class="wrapper-grey wrapper-padding">
   <div class="container">
     <%= partial "additional_information" %>
   </div>
-</div>
-<div class="wrapper-grey wrapper-padding">
-  <%= partial "images_selection", locals: { image_collection: dato.photo_carousel_home_pages } %>
-</div>
-<div class="wrapper-white">
-  <%= partial "two_list_columns" %>
-</div>
-<div class="wrapper-grey">
-  <%= partial "review_home" %>
 </div>
 
 <div class="wrapper-white">
