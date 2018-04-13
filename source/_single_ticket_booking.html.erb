@@ -1,51 +1,60 @@
 <div class="container">
   <%= partial "dark_title", locals: { title: "Join us on the shared boat"} %>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <form action="https://formspree.io/info@flyingdutchboats.com"
-        method="POST" class="contact-form">
-        <div class="form">
-          <input type="hidden" value="shared boat ticket">
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="John Doe" class="form-control">
-          </div>
-          <div class="form-group" id="bottom-input-left">
-            <label for="email">Email:</label>
-            <input type="email" name="_replyto" id="email" placeholder="eduke@deboer.com" class="form-control">
-          </div>
-          <div class="form-group" id="bottom-input-left">
-            <label for="phone">Phone number:</label>
-            <input type="phone" name="phone" id="phone" placeholder="+31 6 12 34 56 78" class="form-control">
-          </div>
-          <div class="form-group" id="bottom-input-left">
-            <label for="date">Date:</label>
-            <input id="date" type="date" name="date">
-          </div>
-          <div class="form-group" id="bottom-input-left">
-            <label for="time">Time indication:</label>
-            <select name="time">
-              <option value="10:00">10:00</option>
-              <option value="12:00">12:00</option>
-              <option value="14:00">14:00</option>
-              <option value="16:00">16:00</option>
-              <option value="18:00">18:00</option>
-              <option value="18:00">20:00</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your message to me:</label>
-            <textarea type="text" name="message" id="message" placeholder="We would like to ask you about .. " class="form-control"></textarea>
-          </div>
-          <input type="submit" value="Send" class='btn-red'>
-        </div>
-      </form>
-    </div>
+  <p>This form is to reserve a spot on the shared tour. <p></p>If you want to reserve a <strong>private tour</strong>, you can do that <a href="/booking.html">here</a>.</p>
+  <div class="row">
     <div class="col-xs-12 col-sm-6">
-      <h3 class="remove-top-margin">Pick up</h3>
-      <p>Prinsengracht 267</p>
-      <p>1016 GV Amsterdam</p>
-      <div id="map"></div>
-    </div>
+      <form action="https://formspree.io/info@flyingdutchboats.com"
+      method="POST" class="contact-form">
+      <div class="form">
+        <input type="hidden" value="shared boat ticket">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="John Doe" class="form-control">
+        </div>
+        <div class="form-group" id="bottom-input-left">
+          <label for="email">Email:</label>
+          <input type="email" name="_replyto" id="email" placeholder="eduke@deboer.com" class="form-control">
+        </div>
+        <div class="form-group" id="bottom-input-left">
+          <label for="phone">Phone number:</label>
+          <input type="phone" name="phone" id="phone" placeholder="+31 6 12 34 56 78" class="form-control">
+        </div>
+        <div class="form-group" id="bottom-input-left">
+          <label for="country-code">Country code:</label>
+          <input type="phone" name="country-code" id="country-code" placeholder="0031" class="form-control">
+        </div>
+        <div class="form-group" id="bottom-input-left">
+          <label for="date">Date:</label>
+          <input id="date" type="date" name="date">
+        </div>
+        <div class="form-group" id="bottom-input-left">
+          <label for="customers">Amount of people:</label>
+          <input id="customers" type="text" name="customers">
+        </div>
+        <div class="form-group" id="bottom-input-left">
+          <label for="time">Time indication:</label>
+          <select name="time">
+            <option value="10:00">10:00</option>
+            <option value="12:00">12:00</option>
+            <option value="14:00">14:00</option>
+            <option value="16:00">16:00</option>
+            <option value="18:00">18:00</option>
+            <option value="18:00">20:00</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your message to me:</label>
+          <textarea type="text" name="message" id="message" placeholder="We would like to ask you about .. " class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Send" class='btn-red'>
+      </div>
+    </form>
   </div>
+  <div class="col-xs-12 col-sm-6">
+    <h3 class="remove-top-margin">Pick up</h3>
+    <p>Prinsengracht 267</p>
+    <p>1016 GV Amsterdam</p>
+    <div id="map"></div>
+  </div>
+</div>
 </div>
