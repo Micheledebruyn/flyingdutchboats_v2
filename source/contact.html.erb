@@ -1,3 +1,12 @@
+<% content_for :meta_title do %>
+<title>
+  Flying Dutch Boats | <%= dato.contact_page.meta_title %>
+</title>
+<% end %>
+<% content_for :meta_description do %>
+  <% dato.events_page.meta_description %>
+<% end %>
+
 <%= partial "wrapper_grey", locals: {title: dato.contact_page.title_introduction_text, text: dato.contact_page.content_introduction_text } %>
 <div class="wrapper-white">
   <div class="container">

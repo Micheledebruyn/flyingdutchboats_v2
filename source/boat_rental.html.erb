@@ -1,6 +1,13 @@
----
-title: Flying Dutch Boats | Private boat tour Amsterdam
----
+<% content_for :meta_title do %>
+<title>
+  Flying Dutch Boats | <%= dato.boat_rental_page.meta_title %>
+</title>
+<% end %>
+<% content_for :meta_description do %>
+  <% dato.boat_rental_page.meta_description %>
+<% end %>
+
+
 <%= partial "main_banner", locals: { title: dato.boat_rental_page.main_title, image: dato.boat_rental_page.background_image.url, cta: dato.boat_rental_page.cta_button } %>
 
 <%= partial "_wrapper_grey", :locals => { :title => dato.boat_rental_page.title_introduction_text, text: dato.boat_rental_page.content_introduction_text } %>
