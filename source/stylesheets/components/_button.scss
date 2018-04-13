@@ -63,6 +63,15 @@
     text-decoration: none;
   }
 }
+.public-tour {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  color: white;
+  font-weight: bolder;
+  border: 3px solid white;
+  padding: 5px 10px;
+}
 
 .fixed-button {
   position: fixed;
