@@ -8,7 +8,9 @@
   <div class="button-container-main visible-xs-flex">
     <%= link_to "#{cta}", button_target, class: "red-mobile-button"  %>
   </div>
+  <% if current_page.path == "index.html" %>
   <div class="public-tour hidden-xs">
     single tickets: <span>15€</span>
   </div>
+  <% end %>
 </div>
