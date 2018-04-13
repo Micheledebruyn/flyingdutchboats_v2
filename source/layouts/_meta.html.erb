@@ -1,4 +1,4 @@
-  <meta name="description"           content="<%= data.meta.description %>" />
+  <meta name="description"           content="<%= yield_content(:meta_description) || data.meta.description %>" />
 
   <!-- Geocoding -->
   <meta name="geo.placename"         content="<%= data.meta.geo_placename %>" />
@@ -7,7 +7,7 @@
 
   <!-- Microdata -->
   <meta itemprop="name"              content="<%= data.meta.name %>" />
-  <meta itemprop="description"       content="<%= data.meta.description %>" />
+  <meta itemprop="description"       content="<%= yield_content(:meta_description) || data.meta.description %>" />
   <meta itemprop="image"             content="<%= image_path data.meta.image %>" />
 
   <!-- Facebook Open Graph data -->
