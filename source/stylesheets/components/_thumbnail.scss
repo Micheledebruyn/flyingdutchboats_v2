@@ -22,3 +22,14 @@
     object-fit: cover;
   }
 }
+
+
+.fleet-boat-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  .fleet-photo {
+    width: 300px;
+  }
+}

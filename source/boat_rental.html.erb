@@ -13,6 +13,7 @@
 <%= partial "_wrapper_grey", :locals => { :title => dato.boat_rental_page.title_introduction_text, text: dato.boat_rental_page.content_introduction_text } %>
 <div class="wrapper-white">
   <%= partial "images_selection", locals: { image_collection: dato.first_photo_carousel_rental_pages } %>
+  <%= partial "fleet_selection"%>
 </div>
 <%= partial "_wrapper_grey", :locals => { :title => dato.drinks_appetizers_section.title_introduction_text, :text => dato.drinks_appetizers_section.content_introduction_text } %>
 <div class="wrapper-white">
