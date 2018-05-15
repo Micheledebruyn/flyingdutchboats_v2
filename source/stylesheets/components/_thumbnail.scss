@@ -32,4 +32,11 @@
   .fleet-photo {
     width: 300px;
   }
+  .boat-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 0px 4px rgba(1,1,1,0.3);
+  }
 }
