@@ -29,7 +29,11 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  .fleet-photo {
+  .boat-image {
     width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 0px 4px rgba(1,1,1,0.3);
   }
 }

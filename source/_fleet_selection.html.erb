@@ -1,69 +1,17 @@
 <div class="container">
   <%= partial "dark_title", locals: { title: "The fleet"} %>
   <div class="row">
+    <% dato.fleet_collections.each do |boat| %>
     <div class="col-xs-12 col-lg-4">
       <div class="fleet-boat-component">
         <h5>
-          Dutchman
+        <%= boat.name %>
         </h5>
         <div class="title-line"></div>
-        <%= image_tag "dutchman.jpg", class: "fleet-photo" %>
+        <div class="boat-image" style="background-image:url('<%= image_path boat.photo.url %>');"></div>
       </div>
     </div>
-    <div class="col-xs-12 col-lg-4">
-      <div class="fleet-boat-component">
-        <h5>
-          Nomag
-        </h5>
-        <div class="title-line"></div>
-        <%= image_tag "nomag.jpg", class: "fleet-photo" %>
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-4">
-      <div class="fleet-boat-component">
-        <h5>
-          Vording
-        </h5>
-        <div class="title-line"></div>
-        <%= image_tag "vording.jpg", class: "fleet-photo" %>
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-4">
-      <div class="fleet-boat-component">
-        <h5>
-          Green Marine
-        </h5>
-        <div class="title-line"></div>
-        <%= image_tag "greenmarine.jpg", class: "fleet-photo" %>
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-4">
-      <div class="fleet-boat-component">
-        <h5>
-          Aspara
-        </h5>
-        <div class="title-line"></div>
-        <%= image_tag "aspara.jpg", class: "fleet-photo" %>
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-4">
-      <div class="fleet-boat-component">
-        <h5 class='text-center'>
-          Vibe
-        </h5>
-        <div class="title-line"></div>
-        <%= image_tag "vibe.jpg", class: "fleet-photo" %>
-      </div>
-    </div>
-    <div class="col-xs-12 col-lg-4">
-      <div class="fleet-boat-component">
-        <h5 class='text-center'>
-          Agatha
-        </h5>
-        <div class="title-line"></div>
-        <%= image_tag "agatha.jpeg", class: "fleet-photo" %>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 
