@@ -1,0 +1,13 @@
+.special-notice-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	.notice-title-line {
+		background: #DF1F26;
+		width: 70px;
+		height: 2px;
+		margin: 25px auto;
+	}
+}

@@ -10,7 +10,7 @@
   </div>
   <% if current_page.path == "index.html" %>
   <div class="public-tour hidden-xs">
-    single tickets: <span>15€</span>
+    single tickets: <span><%= dato.general_info.single_ticket_price %></span>
   </div>
   <% end %>
 </div>
