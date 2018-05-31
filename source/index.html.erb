@@ -8,9 +8,11 @@
 <% end %>
 
 <%= partial "main_banner", locals: { title: dato.canal_page.main_title, image: dato.canal_page.background_image.url, cta: dato.canal_page.cta_button, button_target: "booking.html" } %>
+<% if dato.current_status.visible %>
 <div class="wrapper-white">
   <%= partial "current_status" %>
 </div>
+<% end %>
 <%= partial "_wrapper_grey", :locals => { :title => dato.canal_page.title_introduction_text, :text => dato.canal_page.content_introduction_text } %>
 <div class="wrapper-white wrapper-padding">
   <%= partial "images_selection", locals: { image_collection: dato.photo_carousel_home_pages } %>
