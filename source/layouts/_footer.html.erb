@@ -2,14 +2,13 @@
   <div class="footer-container">
     <div class="location-footer hidden-xs hidden-sm">
       <h3>Find us</h3>
-      <p>Prinsengracht 267</p>
-      <p>1016 GV Amsterdam</p>
+      <p><%= dato.general_info.pickup_address %></p>
       <%= image_tag 'elektrisch.png', width: 150 %>
     </div>
     <div class="information-footer">
       <%= image_tag 'logo-text.png', class: "logo", alt: "Flying Dutch Boats logo" %>
-      <%= link_to "+31 647589217", "tel:+31647589217", class: "red-link" %>
-      <%= link_to "flyingdutchboats@gmail.com", "mailto:flyingdutchboats@gmail.com", class: "red-link" %>
+      <%= link_to dato.general_info.phone_number, "tel:#{dato.general_info.phone_number}", class: "red-link" %>
+      <%= link_to dato.general_info.email_address, "mailto:#{dato.general_info.email_address}", class: "red-link" %>
     </div>
     <div class="tripadvisor-widget hidden-xs hidden-sm">
 
