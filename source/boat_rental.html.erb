@@ -26,7 +26,11 @@
     </h2>
     <div class="row">
       <% dato.boat_tours.each do |tour| %>
+      <% if dato.boat_tours.size == 3 %>
       <div class="col-xs-12 col-sm-4">
+        <% else %>
+        <div class="col-xs-12 col-sm-6">
+        <% end %>
         <div class="tour tour-1">
          <div class="title-tour">
           <h3>
